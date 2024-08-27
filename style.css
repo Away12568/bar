@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+
+}
+.wrapper{
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:  4px 4px 15px 0 rgba(0, 0, 0, 0.861);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2{
+        text-align: center;
+    }
+    backdrop-filter: blur(15px);
+    background-color: rgba(173, 216, 230, 0.101);
+    width: 80%;
+}
+
+
+p{
+   padding: 8px;
+   transition: all 0.5s;
+    
+   cursor: pointer;
+   &:hover{
+       background-color: lightgray;
+   } 
+}
+
+input, button {
+    padding: 8px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    border: 1px solid gray;
+    margin-top: 30px ;
+    padding: 10px;
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: white;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgb(202, 191, 191);
+    }
+}
+body{
+    background-image: url(https://4kwallpapers.com/images/wallpapers/galaxy-cosmic-3440x1440-14974.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
